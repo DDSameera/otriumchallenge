@@ -15,6 +15,7 @@ This is an MVC/OOP PHP project that allows used to generate Turnover in CSV form
 2. Run command ```composer require phpoffice/phpspreadsheet``` 
 3. DB & Other Configueration ```app/config/config.php``` 
 
+```
 a). Host - http://localhost
 b). Root Folder - Project folder name
 c). Site Name - Project Title
@@ -22,6 +23,7 @@ d). DB Host - Eg: localhost
 e). DB User - "root"
 f). DB Pass - Database Password in here
 g). DB Name - Database Name
+
 ```
    $host = "http://localhost";  
    $rootFolder = "otriumchallenge";
