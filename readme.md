@@ -30,5 +30,5 @@ define('DB_NAME', 'otrium_challenge');
 4. Bootstrap
 5. PHPSpreadsheet (More Info : https://phpspreadsheet.readthedocs.io/en/latest/ )
 
-###Support
+### Technical Support
 Sameera Dananjaya Wijerathna - 0718761292
