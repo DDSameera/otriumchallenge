@@ -1,7 +1,7 @@
 <?php
 
 $host = "http://localhost";
-$rootFolder = "otriumchallenge";
+$rootFolder = "ortrium";
 $siteName = "Otrium Challenge";
 $dbHost = "localhost";
 $dbUser = "root";
