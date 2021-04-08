@@ -5,14 +5,14 @@ This is an MVC/OOP PHP project that allows used to generate Turnover in CSV form
 
 # Getting started
 
-###Pre Requsists
+### Pre Requsists
 1. WAMP or XAMPP Environment
 2. Composer Latest Version
 
 ### Installing
 
 1. Clone the repo
-2. Run command ```composer require phpoffice/phpspreadsheet``` I
+2. Run command ```composer require phpoffice/phpspreadsheet``` 
 3. DB Configueration ```app/config/config.php``` and modify it 
 ```
 define('DB_HOST', 'localhost');
