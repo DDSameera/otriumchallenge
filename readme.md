@@ -11,15 +11,27 @@ This is an MVC/OOP PHP project that allows used to generate Turnover in CSV form
 
 ### Installing
 
-1. Clone the repo
+1. Clone the repo to your localhost
 2. Run command ```composer require phpoffice/phpspreadsheet``` 
-3. DB Configueration ```app/config/config.php``` 
+3. DB & Other Configueration ```app/config/config.php``` 
+
+a). Host - http://localhost
+b). Root Folder - Project folder name
+c). Site Name - Project Title
+d). DB Host - Eg: localhost
+e). DB User - "root"
+f). DB Pass - Database Password in here
+g). DB Name - Database Name
 ```
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'otrium_challenge');
+   $host = "http://localhost";  
+   $rootFolder = "otriumchallenge";
+   $siteName = "Otrium Challenge";
+   $dbHost = "localhost";
+   $dbUser = "root";
+   $dbPass = "";
+   $dbName = "otrium_challenge";
 ```
+
 4. All CSV Reports Saved in ```app/public/reports```
 
 ### Technology Stack
