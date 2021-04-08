@@ -72,7 +72,7 @@ class Index extends Controller
             //If there is any valiation errors , redirect to Main Page
             if (!empty($validationErrors)) {
                 $_SESSION ['errors'] = $validationErrors;
-                header("Location: " . WEBROOT . "/index.php");
+                header("Location: " . SITE_URL . "/index.php");
                 die();
             } else {
                 unset ($_SESSION["errors"]); //If there is no errors, then unset "error" session
@@ -150,13 +150,13 @@ class Index extends Controller
         //Generate Excel Sheet
         $currentDate = date('Y-m-d');
         $fileName = 'turn_over_report_'. $currentDate;
-        $filePath = PUBURL . '/reports/' . $fileName;
+        $filePath = PUB_URL . '/reports/' . $fileName;
         //Save File
         $excelSheet = new Excelsheet;
         $excelSheet->save($turnOver, $brandItems, $filePath, $isExcludedTax);
 
         //Download Link
-        $downloadLink = URLROOT . "/public/reports/$fileName.csv";
+        $downloadLink = SITE_URL . "/public/reports/$fileName.csv";
 
 
         return $downloadLink;

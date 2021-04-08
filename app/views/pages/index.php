@@ -1,4 +1,4 @@
-<?php require APPROOT . "/views/inc/header.php"; ?>
+<?php require APP_ROOT . "/views/inc/header.php"; ?>
 
     <div id="layoutSidenav">
         <!--Start Layout Side Navigation Panel-->
@@ -26,7 +26,7 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Turnover Report Generator</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="<?= WEBROOT ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?= SITE_URL ?>">Home</a></li>
                         <li class="breadcrumb-item active">Turn Over Report Generator</li>
                     </ol>
 
@@ -56,7 +56,7 @@
 
 
                         <!--Filter Form-->
-                        <form action="<?= URLROOT . '/' ?>" method="post">
+                        <form action="<?= SITE_URL . '/' ?>" method="post">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
                                 Filters
@@ -276,4 +276,4 @@
     </div>
 
 
-<?php require APPROOT . "/views/inc/footer.php"; ?>
+<?php require APP_ROOT . "/views/inc/footer.php"; ?>

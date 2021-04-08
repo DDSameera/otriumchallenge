@@ -1,5 +1,5 @@
 <?php
-require LIBPATH . '/autoload.php';
+require LIB_PATH . '/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Csv;

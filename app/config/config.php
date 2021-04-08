@@ -1,32 +1,38 @@
 <?php
 
-$rootFolder = "otrium";
+$host = "http://localhost";
+$rootFolder = "otriumchallenge";
 $siteName = "Otrium Challenge";
+$dbHost = "localhost";
+$dbUser = "root";
+$dbPass = "";
+$dbName = "otrium_challenge";
 
-// DB params
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'otrium_challenge');
+//ROOT FOLDER
+define('ROOT_FOLDER', $rootFolder);
 
-// App root
-define('APPROOT', dirname(dirname(__FILE__)));
+// SITE URL
+define('SITE_URL', $host . '/' . ROOT_FOLDER);
 
-//Web Root
-define('WEBROOT', dirname(dirname(basename($_SERVER['REQUEST_URI']))));
+//SITE NAME
+define('SITE_NAME', $siteName);
 
-//document Root
-define('DOCROOT', $_SERVER['DOCUMENT_ROOT']);
+// DB PARAMS
+define('DB_HOST', $dbHost);
+define('DB_USER', $dbUser);
+define('DB_PASS', $dbPass);
+define('DB_NAME', $dbName);
 
-// SERVER URL
-define('URLROOT', 'http://localhost/' . $rootFolder);
+// APP ROOT
+define('APP_ROOT', dirname(dirname(__FILE__)));
 
-// Site name
-define('SITENAME', $siteName);
+// DOCUMENT ROOT
+define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
-// Library Path
-define('LIBPATH', DOCROOT . "/$rootFolder/vendor");
 
-//Public URL
-define('PUBURL', DOCROOT . "/$rootFolder/public/");
+// LIBRARAY PATH
+define('LIB_PATH', DOC_ROOT . '/'.ROOT_FOLDER . '/vendor');
+
+// PUBLIC URL
+define('PUB_URL', DOC_ROOT . '/' . ROOT_FOLDER . '/public');
 
