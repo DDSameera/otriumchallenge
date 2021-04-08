@@ -80,26 +80,26 @@
                                         <div class="form-row">
                                             <!--Start Date Input-->
                                             <div class="form-group col-md-3">
-                                                <label>Choose Start Date : <span class="text-white badge badge-info">(Default : 2018-05-01)</span></label>
+                                                <label>Choose Start Date : </label>
                                                 <input class="form-control datepicker" type="text"
                                                        name="start_date_input"
                                                        placeholder="Enter Start Date"
-                                                       value="<?= isset($_POST['start_date_input']) ? $_POST['start_date_input'] : "2018-05-01" ?>"/>
+                                                       value="<?= isset($_POST['start_date_input']) ? $_POST['start_date_input'] : "" ?>"/>
                                             </div>
                                             <!--Start Date Input-->
 
                                             <!--End Date Input-->
                                             <div class="form-group col-md-3">
-                                                <label>Choose End Date : <span class="text-white badge badge-info">(Default : 2018-05-07)</span></label>
+                                                <label>Choose End Date : </label>
                                                 <input class="form-control datepicker" type="text" name="end_date_input"
                                                        placeholder="Enter End Date"
-                                                       value="<?= isset($_POST['end_date_input']) ? $_POST['end_date_input'] : "2018-05-07" ?>"/>
+                                                       value="<?= isset($_POST['end_date_input']) ? $_POST['end_date_input'] : "" ?>"/>
                                             </div>
                                             <!--End Date Input-->
 
                                             <!--Select Brand-->
                                             <div class="form-group col-md-3">
-                                                <label>Select Brand Name <span class="text-white badge badge-info">(Default : -Select All-)</span></label>
+                                                <label>Select Brand Name </label>
                                                 <select class="form-control" name="brand_category_input">
                                                     <option value="">-Select All-</option>
                                                     <?php foreach ($data['brandCategories'] as $bc): ?>
@@ -114,7 +114,7 @@
                                             <div class="form-group col-md-3">
                                                 <div class="form-row">
                                                     <div class="col-md-12">
-                                                        <label>Exclude VAT : <span class="text-white badge badge-info">(Default : False)</span></label>
+                                                        <label>Exclude VAT : </label>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">

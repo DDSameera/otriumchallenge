@@ -50,7 +50,7 @@ class Index extends Controller
 
 
                 /* 2. End Date should always greater than from date */
-                if (!($endDate > $startDate)) {
+                if (!($endDate >= $startDate)) {
                     array_push($validationErrors, "End Date should be  greater than from date");
                 }
             }
